@@ -18,6 +18,7 @@ public class JaxRsApplication extends Application {
         Set<Class<?>> resources = new HashSet<>();
         // adiciona recursos REST
         resources.add(br.senac.rj.backend.controller.AlunoController.class);
+        resources.add(br.senac.rj.backend.controller.EventoController.class);
         resources.add(br.senac.rj.backend.controller.TurmaController.class);
         resources.add(br.senac.rj.backend.controller.UsuarioController.class);
         resources.add(br.senac.rj.backend.filter.AuthFilter.class);
