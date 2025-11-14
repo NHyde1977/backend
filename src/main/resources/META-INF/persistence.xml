@@ -31,4 +31,31 @@
 			<property name="hibernate.format_sql" value="true" />
 		</properties>
 	</persistence-unit>
+	
+	<persistence-unit name="backendPU2"
+		transaction-type="RESOURCE_LOCAL">
+		<!-- Classes das tabelas -->
+		<class>br.senac.rj.backend.entity.Evento</class>
+
+
+		<properties>
+			<!-- Classes das tabelas -->
+			<property name="jakarta.persistence.jdbc.driver"
+				value="com.mysql.cj.jdbc.Driver" />
+			<property name="jakarta.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/exemplo?useSSL=false&amp;serverTimezone=UTC" />
+			<property name="jakarta.persistence.jdbc.user" value="root" />
+			<property name="jakarta.persistence.jdbc.password" value="" />
+
+			<!-- Criação automática das tabelas -->
+			<!-- Não cria o banco de dados. Tem que criar o banco manualmente -->
+			<!-- <property name="jakarta.persistence.schema-generation.database.action" value="update" /> -->
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+
+
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+		</properties>
+	</persistence-unit>
 </persistence>
