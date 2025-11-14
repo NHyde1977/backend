@@ -36,6 +36,8 @@
 		transaction-type="RESOURCE_LOCAL">
 		<!-- Classes das tabelas -->
 		<class>br.senac.rj.backend.entity.Evento</class>
+		<class>br.senac.rj.backend.entity.Ingresso</class>
+		<class>br.senac.rj.backend.entity.Usuario</class>
 
 
 		<properties>
@@ -43,7 +45,7 @@
 			<property name="jakarta.persistence.jdbc.driver"
 				value="com.mysql.cj.jdbc.Driver" />
 			<property name="jakarta.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/exemplo?useSSL=false&amp;serverTimezone=UTC" />
+				value="jdbc:mysql://localhost:3306/ingresseja?useSSL=false&amp;serverTimezone=UTC" />
 			<property name="jakarta.persistence.jdbc.user" value="root" />
 			<property name="jakarta.persistence.jdbc.password" value="" />
 
