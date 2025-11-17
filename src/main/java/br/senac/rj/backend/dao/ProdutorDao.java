@@ -6,7 +6,7 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
 public class ProdutorDao {
-	private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("backendPU");
+	private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("backendPU2");
 
 	public Produtor salvar(Produtor produtor) {
 		EntityManager em = emf.createEntityManager();
