@@ -17,10 +17,7 @@ import lombok.Data;
 @Table(name = "usuario")
 @Data
 public class Usuario {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long usuarioId;
-	
+    @Id	
     @Column(length = 80, nullable = false)
     private String email;
 
