@@ -38,6 +38,7 @@
 		<class>br.senac.rj.backend.entity.Evento</class>
 		<class>br.senac.rj.backend.entity.Ingresso</class>
 		<class>br.senac.rj.backend.entity.Usuario</class>
+		<class>br.senac.rj.backend.entity.Produtor</class>
 
 
 		<properties>
