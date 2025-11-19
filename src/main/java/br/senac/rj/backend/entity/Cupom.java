@@ -21,10 +21,10 @@ import lombok.Data;
 public class Cupom {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long CupomId;
+    private Long cupomId;
 
     @Column(length = 80, nullable = false)
-    private String CupomNome;
+    private String cupomNome;
     
     @Column(length = 80, nullable = false)
     private float valorDesconto;
