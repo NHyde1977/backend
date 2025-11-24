@@ -25,8 +25,11 @@ public class Ingresso {
 
     @Column(length = 80, nullable = false)
     private String tipoIngresso;
+    
+    @Column(nullable = false)
+    private float valorIngresso;   // << NOVO ATRIBUTO
 
     @ManyToOne
-    @JoinColumn(name = "eventoId")
+    @JoinColumn(name = "eventoId", nullable = false)
     private Evento evento;
 }
